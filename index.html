@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="clock-container">
+        <div class="clock">
+          <div class="time" id="clock1">00:00:00</div>
+          <div class="controls">
+            <button onclick="startTimer(1)">Start</button>
+            <button onclick="resetTimer(1)">Stop</button>
+            <button onclick="pauseTimer(1)">Pause</button>
+          </div>
+        </div>
+        <div class="clock">
+          <div class="time" id="clock2">00:00:00</div>
+          <div class="controls">
+            <button onclick="startTimer(2)">Start</button>
+            <button onclick="resetTimer(2)">Stop</button>
+            <button onclick="pauseTimer(2)">Pause</button>
+          </div>
+        </div>
+        <div class="clock">
+          <div class="time" id="clock3">00:00:00</div>
+          <div class="controls">
+            <button onclick="startTimer(3)">Start</button>
+            <button onclick="resetTimer(3)">Stop</button>
+            <button onclick="pauseTimer(3)">Pause</button>
+          </div>
+        </div>
+        <div class="controls">
+          <button onclick="resetAllTimers()">Stop All</button>
+          <button onclick="startAllTimers()">Start All</button>
+          <button onclick="pauseAllTimers()">Pause All</button>
+        </div>
+      </div>
+      <script src="./script.js"></script>
+</body>
+</html>
